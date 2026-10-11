@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #f8f8f8;
+            color: #212529;
+        }
+        .navbar {
+            background-color: #343a40;
+        }
+        .navbar-brand, .nav-link {
+            color: #fafafa;
+        }
+        .nav-link:hover {
+            color: #adb5bd;
+        }
+        section {
+            padding-top: 55px;
+            padding-bottom: 55px;
+        }
+        section:nth-child(even) {
+            background-color: #ffffff;
+        }
+        #beranda {
+            background-color: #343a40;
+            color: #ffffff;
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+        #beranda p {
+            color: #adb5ad;
+        }
+        .foto-box {
+            width: 150px;
+            height: 180px;
+            background-color: #dee2e6;
+            border: 2px dashed #adb5bd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #6c757d;
+            font-size: 12px;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">Website Portofolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#aboutme">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="home">
+        <div class="container">
+            <h1 class="display-5 fw-bold">Hello Word!</h1>
+            <p class="lead">Computer Science student exploring web development.
+                Here are a few projects and assignments I’ve built during my studies.</p>
+        </div>
+    </section>
+
+    <section id="aboutme">
+        <div class="container">
+            <h2>About me</h2>
+            <hr>
+
+            <div class="row mt-4">
+                <div class="col-auto">
+                    <img src="ricky.jpg" alt="ricky montgomery" width="150" height="180" style="object-fit: cover;"> 
+                </div>
+                <div class="col">
+                    <p>I'm Dimas Darmawan, a collection of my university projects and
+                         a quick intro about myself.</p>
+                    <table class="table table-bordered mt-3">
+                        <thead>
+                            <tr>
+                                <th>School/College</th>
+                                <th>Year</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>SMP LabSchool Jakarta</td>
+                                <td>2019 – 2022</td>
+                            </tr>
+                            <tr>
+                                <td>SMA BSJ</td>
+                                <td>2022 – 2025</td>
+                            </tr>
+                            <tr>
+                                <td>MIT – Computer Science</td>
+                                <td>2025 – now </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h5 class="mt-4">Visit my GitHub</h5>
+                    <p>All project source codes are hosted on GitHub:</p>
+                    <a href="https://github.com/ddimzuu-source" target="_blank" class="btn btn-dark">
+                        Click Here!!
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <hr>
+            <p>Email: <a href="mailto:dimas@students.paramadina.ac.id" class="link-dark">dimas@students.paramadina.ac.id</a></p>
+            <p>GitHub: <a href="https://github.com/ddimzuu-source" target="_blank" class="link-dark">ddimzuu-source</a></p>
+            <p>Instagram: <a href="https://www.instagram.com/drmwnmass?rpxt=MW5yajN2ems3Mml4Nw==" target="_blank" class="link-dark">drmwnmass</a></p>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">&copy; 2026 Portofolio Dimas</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(function (link) {
+            link.addEventListener('click', function (e) {
+                var target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
